@@ -1,0 +1,8 @@
+version: "3.5"
+
+services:
+    srour_chain:
+        image: rikorose/gcc-cmake:latest
+        container_name: 'srour_chain'
+        volumes:
+            - ./:/usr/src/myapp/
