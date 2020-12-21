@@ -4,7 +4,8 @@
  * License: Apache License, Version 2.0, January 2004 (http://www.apache.org/licenses/)
  */
 
-#include "sh256.h"
+#include <sstream>
+#include "sha256.h"
 #include "Block.h"
 #include "time.h"
 

@@ -28,4 +28,5 @@ private:
     time_t _tTime;
     string _CalculateHash() const;
 };
+
 #endif /* _BLOCK_H_ */

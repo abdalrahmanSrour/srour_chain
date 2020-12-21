@@ -1,13 +1,14 @@
 
-build: myapp
+build: TestChain
 
-build/block: build/src/*.o
-	g++ -o myapp main.cpp
+TestChain:
+	mkdir -p build
+	g++ -lstdc++ -Isrc -o ./build/TestChain -std=c++11 -x c++ src/main.cpp src/Block.cpp src/BlockChain.cpp src/sha256.cpp
 
-run: myapp
-	./myapp
+run: TestChain
+	./build/TestChain
 
 .PHONY: clean
 
 clean:
-	rm ./myapp *.o
+	rm -rf ./build
