@@ -14,7 +14,7 @@
 class Blockchain
 {
 public:
-    Blockchain();
+    Blockchain(uint32_t difficulty = 6);
     void AddBlock(Block bNew);
 
 private:

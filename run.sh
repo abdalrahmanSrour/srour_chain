@@ -13,7 +13,7 @@ cmake ..
 echo "$0 >>> Building..."
 make
 
-echo "$@ >>> Run mining example"
-./examples/mining/SrourChainMiningExample
+echo "$@ >>> Run miningDiff3 example"
+./examples/miningDiff3/SrourChainMiningDiff3Example
 
 tail -F $0
