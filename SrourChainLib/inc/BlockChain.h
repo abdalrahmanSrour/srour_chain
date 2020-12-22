@@ -10,7 +10,6 @@
 #include <cstdint>
 #include <vector>
 #include "Block.h"
-using namespace std;
 
 class Blockchain
 {
@@ -20,7 +19,7 @@ public:
 
 private:
     uint32_t _nDifficulty;
-    vector<Block> _vChain;
+    std::vector<Block> _vChain;
     Block _GetLastBlock() const;
 };
 

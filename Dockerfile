@@ -7,14 +7,12 @@ FROM rikorose/gcc-cmake:latest
 
 # These commands copy your files into the specified directory in the image
 # and set that as the working location
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
+COPY . /usr/src/SCL
+WORKDIR /usr/src/SCL
 
-
-# This command compiles your app using GCC, adjust for your source code
-RUN make build
+RUN chmod +x ./run.sh
 
 # This command runs your application, comment out this line to compile only
-CMD ["make", "run"]
+CMD ["./run.sh"]
 
-LABEL Name=project Version=0.0.1
+LABEL Name=SrourChainLib=0.1.0

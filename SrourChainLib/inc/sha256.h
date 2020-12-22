@@ -34,7 +34,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  * 
- * see also \thirdparty\sh256.LICENSE
+ * see also ../../thirdparty/sh256.LICENSE
  */
 
 #ifndef SHA256_H
